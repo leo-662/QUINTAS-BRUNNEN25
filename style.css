@@ -83,7 +83,7 @@ h1, h2, h3, h4 {
     color: var(--color-beige);
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em; /* Ajuste del tamaño para mejor legibilidad */
+    font-size: 0.9em; /* Ajustamos el tamaño para que quepa todo */
     transition: color 0.3s ease;
 }
 
