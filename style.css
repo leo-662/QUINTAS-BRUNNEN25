@@ -44,7 +44,7 @@ h1, h2, h3, h4 {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
@@ -75,12 +75,15 @@ h1, h2, h3, h4 {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links a {
     color: var(--color-beige);
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em; /* Ajuste del tamaño para mejor legibilidad */
     transition: color 0.3s ease;
 }
 
@@ -90,7 +93,7 @@ h1, h2, h3, h4 {
 
 /* Sección Hero */
 .hero {
-    background-image: url('hero-bg.jpg'); /* Asegúrate de que esta imagen esté en el mismo directorio */
+    background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -112,7 +115,7 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(38, 87, 94, 0.6); /* Capa semitransparente sobre la imagen */
+    background: rgba(38, 87, 94, 0.6);
 }
 
 .hero-content {
@@ -141,12 +144,6 @@ h1, h2, h3, h4 {
     color: #fff;
 }
 
-/* Secciones de Contenido */
-.bg-light {
-    background-color: var(--color-blue);
-    color: #fff;
-}
-
 /* Grillas para Valores y Amenidades */
 .valores-grid, .amenidades-grid {
     display: grid;
@@ -160,6 +157,16 @@ h1, h2, h3, h4 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valor img, .amenidad img {
+    height: 60px; /* Ajusta el tamaño de los íconos */
+    margin-bottom: 10px;
+}
+
+.bg-light {
+    background-color: var(--color-blue);
+    color: #fff;
 }
 
 .bg-light .amenidad {
@@ -196,4 +203,23 @@ footer {
     color: var(--color-beige);
     text-align: center;
     padding: 20px;
+}
+
+/* Media Queries para Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0 5px;
+    }
 }
